@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "blog": "file:",
+    "next": "14.2.15",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15",
+    "typescript": "^5"
+  },
+  "name": "blog",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "postbuild": "cp staticwebapp.config.json ./out",
+    "start": "next start"
+  },
+  "version": "0.1.0"
+}
