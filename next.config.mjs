@@ -2,9 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    unoptimized: true,
+    unoptimized: true, // Disable image optimization if needed for static hosting
   },
-  basePath: '/blog',
+  basePath: '/blog', // This ensures the app is hosted at /blog
+  trailingSlash: true, // Optional: Helps avoid issues with paths
 };
 
 export default nextConfig;
